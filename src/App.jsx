@@ -7,13 +7,13 @@ import { useState } from "react";
 
 function App() {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: import.meta.env.VITE_Open_AI_Key,
   });
   const openai = new OpenAIApi(configuration);
   const [option, setOption] = useState({});
   const [result, setResult] = useState("");
   const [input, setInput] = useState("");
-  // console.log(import.meta.env.VITE_Open_AI_Key);
+   console.log(import.meta.env.VITE_Open_AI_Key);
   const selectOption = (option) => {
     setOption(option);
   };

@@ -5,7 +5,7 @@ export default function OptionSelection({ arrayItems, selectOption }) {
     <>
       <h1 className="heading">React AI APP</h1>
 
-      <div className="grid-main">
+      <div className="">
         {arrayItems.map((item) => {
           return (
             <div
